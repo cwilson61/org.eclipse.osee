@@ -27,7 +27,9 @@
 							attributesEditorForm.invalid
 								? 'tw-text-warning'
 								: '',
-							hasChanges() ? 'tw-text-primary' : '',
+							hasChanges()
+								? 'tw-border tw-text-primary tw-text-red-500'
+								: '',
 						]"
 						>save</mat-icon
 					>

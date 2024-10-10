@@ -205,7 +205,7 @@ export class ArtifactHierarchyComponent {
 	);
 
 	addTab(artifact: artifactWithRelations) {
-		this.tabService.addArtifactTab(artifact);
+		this.tabService.addArtifactTab(structuredClone(artifact));
 	}
 
 	getIconClasses(icon: artifactTypeIcon) {
